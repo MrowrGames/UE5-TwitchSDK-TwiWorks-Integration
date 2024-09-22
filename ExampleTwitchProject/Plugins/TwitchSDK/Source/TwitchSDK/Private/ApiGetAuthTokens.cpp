@@ -1,10 +1,10 @@
-#include "ApiGetUserTokens.h"
+#include "ApiGetAuthTokens.h"
 
 // For TwitchSDK --> TwiWorks
 
-void UApiGetUserTokens::Activate()
+void UApiGetAuthTokens::Activate()
 {
-	TWeakObjectPtr<UApiGetUserTokens> weak(this);
+	TWeakObjectPtr<UApiGetAuthTokens> weak(this);
 	auto exception_handler = [weak](const std::exception& e)
 	{
 		if (weak.IsValid() && weak->Error.IsBound())
@@ -12,7 +12,7 @@ void UApiGetUserTokens::Activate()
 			weak->Error.Broadcast(FString(), FString(e.what()));
 		}
 		else
-			UE_LOG(LogTwitchSDK, Error, TEXT("GetUserTokens error: %s"), UTF8_TO_TCHAR(e.what()));
+			UE_LOG(LogTwitchSDK, Error, TEXT("GetAuthTokens error: %s"), UTF8_TO_TCHAR(e.what()));
 	};
 	try
 	{
@@ -34,8 +34,8 @@ void UApiGetUserTokens::Activate()
 	}
 }
 
-UApiGetUserTokens* UApiGetUserTokens::GetUserTokens()
+UApiGetAuthTokens* UApiGetAuthTokens::GetAuthTokens()
 {
-	auto ptr = NewObject<UApiGetUserTokens>();
+	auto ptr = NewObject<UApiGetAuthTokens>();
 	return ptr;
 }

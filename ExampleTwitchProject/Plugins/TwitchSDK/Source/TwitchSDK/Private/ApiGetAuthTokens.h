@@ -4,22 +4,22 @@
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "TwitchSDKStructs.h"
 
-#include "ApiGetUserTokens.generated.h"
+#include "ApiGetAuthTokens.generated.h"
 
 // For TwitchSDK --> TwiWorks
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAsyncDoneApiGetUserTokens, FString, AccessToken, FString, RefreshToken);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAsyncDoneApiGetAuthTokens, FString, AccessToken, FString, RefreshToken);
 
 UCLASS(meta=(HideThen=true))
-class TWITCHSDK_API UApiGetUserTokens : public UBlueprintAsyncActionBase
+class TWITCHSDK_API UApiGetAuthTokens : public UBlueprintAsyncActionBase
 {
 	GENERATED_BODY()
 
 public:
 	UPROPERTY(BlueprintAssignable)
-	FAsyncDoneApiGetUserTokens Done;
+	FAsyncDoneApiGetAuthTokens Done;
 	UPROPERTY(BlueprintAssignable)
-	FAsyncDoneApiGetUserTokens Error;
+	FAsyncDoneApiGetAuthTokens Error;
 
 	virtual void Activate() override;
 
@@ -30,5 +30,5 @@ public:
 	 *
 	 */
 	UFUNCTION(BlueprintCallable, meta = (BlueprintInternalUseOnly = "true"), Category = "Twitch")
-	static UApiGetUserTokens* GetUserTokens();
+	static UApiGetAuthTokens* GetAuthTokens();
 };
