@@ -1,18 +1,20 @@
 # Unreal Engine 5 TwitchSDK plugin integration for TwiWorks
 
-**Download**
-
-https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/releases/tag/GetAuthTokens
-
-![Screenshot of Blueprint nodes](Screenshot.png)
-
---
+> **Download**
+>
+> https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/releases/tag/GetAuthTokens
 
 This repo contains a patched `TwitchSDK` plugin and a **sample project** with the integration of the plugin with TwiWorks.
 
 The `TwiWorks` plugin can be configured using existing Twitch auth (access token and refresh token).
 
 This patch adds a `GetAuthTokens()` node to the `TwitchSDK` plugin, which returns the access token and refresh token.
+
+![Screenshot of Blueprint nodes](Screenshot.png)
+
+--
+
+Example project UI:
 
 ![Screenshot of UI of the example project](ExampleProjectScreenshot.png)
 
@@ -43,5 +45,5 @@ It is provided here for the patch to get TwithSDK working with TwiWorks.
 > Adds `GetUserTokens`:
 > - https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/commit/d9ee3c68e576a07580ccdf45334018b88d0c291a?w=1
 >
-> Renamed it to `GetAuthTokens`: 
+> Renamed it to `GetAuthTokens`:
 > - https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/commit/45dd12dbd8da59059d6969ec4e396dafa45c0833?w=1
