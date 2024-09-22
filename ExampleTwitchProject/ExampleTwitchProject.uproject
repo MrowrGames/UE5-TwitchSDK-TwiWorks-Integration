@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.4",
+	"Category": "",
+	"Description": "",
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "TwitchSDK",
+			"Enabled": true
+		},
+		{
+			"Name": "TwitchWorks",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/50ad7661b7274a408034fc4ad7e4aa82"
+		}
+	]
+}
