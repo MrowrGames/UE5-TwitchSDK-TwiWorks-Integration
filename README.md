@@ -2,7 +2,7 @@
 
 **Download**
 
-https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/releases/tag/GetAuthTokens**
+https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/releases/tag/GetAuthTokens
 
 ![Screenshot of Blueprint nodes](Screenshot.png)
 
