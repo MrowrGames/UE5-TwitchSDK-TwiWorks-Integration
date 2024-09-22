@@ -8,11 +8,13 @@ https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/releases/tag/Ge
 
 --
 
-This repo contains a patched `TwitchSDK` plugin and a sample project with the integration of the plugin with TwiWorks.
+This repo contains a patched `TwitchSDK` plugin and a **sample project** with the integration of the plugin with TwiWorks.
 
 The `TwiWorks` plugin can be configured using existing Twitch auth (access token and refresh token).
 
 This patch adds a `GetAuthTokens()` node to the `TwitchSDK` plugin, which returns the access token and refresh token.
+
+![Screenshot of UI of the example project](ExampleProjectScreenshot.png)
 
 ---
 
