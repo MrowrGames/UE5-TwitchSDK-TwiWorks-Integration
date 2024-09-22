@@ -39,7 +39,7 @@ It is provided here for the patch to get TwithSDK working with TwiWorks.
 > Patch commits (_the commits which add `GetAuthTokens` node for integration with TwiWorks_):
 >
 > Adds `GetUserTokens`:
-> - https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/commit/d9ee3c68e576a07580ccdf45334018b88d0c291a
+> - https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/commit/d9ee3c68e576a07580ccdf45334018b88d0c291a?w=1
 >
 > Renamed it to `GetAuthTokens`: 
-> - https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/commit/45dd12dbd8da59059d6969ec4e396dafa45c0833
+> - https://github.com/MrowrGames/UE5-TwitchSDK-TwiWorks-Integration/commit/45dd12dbd8da59059d6969ec4e396dafa45c0833?w=1
