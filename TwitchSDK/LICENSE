@@ -1,0 +1,17 @@
+The TwitchSDK Unreal plugin is copyright Twitch.
+
+Documentation:
+
+- https://dev.twitch.tv/docs/game-engine-plugins/
+
+Download link for latest SDK at the time of writing (121523):
+
+- https://dev.twitch.tv/docs/assets/uploads/TwitchSDK-Unreal-121523.zip
+
+Unreal Getting Started with Blueprints:
+
+- https://dev.twitch.tv/docs/game-engine-plugins/unreal-guide-blueprints/
+
+This code is NOT OPEN SOURCE. Please download it DIRECTLY from the Twitch website.
+
+It is provided here for the patch to get TwithSDK working with TwiWorks.
