@@ -10,6 +10,8 @@ The `TwiWorks` plugin can be configured using existing Twitch auth (access token
 
 This patch adds a `GetAuthTokens()` node to the `TwitchSDK` plugin, which returns the access token and refresh token.
 
+This does **not** include the `TwiWorks` plugin. You can download it from the Unreal Marketplace. No changes are needed in the `TwiWorks` plugin.
+
 ![Screenshot of Blueprint nodes](Screenshot.png)
 
 --
