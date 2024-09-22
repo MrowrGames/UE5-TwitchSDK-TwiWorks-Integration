@@ -163,6 +163,10 @@ public:
 	virtual void PrepareShutdown(ResolveFn<void> resolve, RejectFn reject) override;
 
 	virtual void GetAuthState(ResolveFn<const AuthState&> resolve, RejectFn reject) override;
+
+	// For TwitchSDK --> TwiWorks
+	virtual void GetAuthTokens(ResolveFn<const AuthTokens&> resolve, RejectFn reject) override;
+
 	virtual void GetAuthenticationInfo(string_view scopes, ResolveFn<const AuthenticationInfo&> resolve, RejectFn reject) override;
 	virtual void LogOut(ResolveFn<void> resolve, RejectFn reject) override;
 

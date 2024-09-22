@@ -190,6 +190,22 @@ void R66ApiImpl::GetAuthenticationInfo(string_view scopes, ResolveFn<const Authe
 	});
 }
 
+// For TwitchSDK --> TwiWorks
+void R66ApiImpl::GetAuthTokens(ResolveFn<const AuthTokens&> resolve, RejectFn reject)
+{
+	Initialized.Await([self = shared_from_this(), resolve, reject](const VoidResult&) {
+		if (self->AuthResult.IsDone())
+		{
+			const auto &ar = self->AuthResult.Unwrap();
+			resolve({ ar.AccessToken, ar.RefreshToken });
+		}
+		else
+		{
+			reject(std::runtime_error("Not authenticated"));
+		}
+	});
+}
+
 void R66ApiImpl::FetchAuthenticationInfo(Self self, string scopes, ResolveFn<const AuthenticationInfo&> resolve, RejectFn reject)
 {
 	std::lock_guard<std::recursive_mutex> lock(self->Mutex);
