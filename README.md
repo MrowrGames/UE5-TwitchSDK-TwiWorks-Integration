@@ -36,10 +36,6 @@ Unreal Getting Started with Blueprints:
 
 - https://dev.twitch.tv/docs/game-engine-plugins/unreal-guide-blueprints/
 
-This code is NOT OPEN SOURCE. Please download it DIRECTLY from the Twitch website.
-
-It is provided here for the patch to get TwithSDK working with TwiWorks.
-
 ---
 
 > Patch commits (_the commits which add `GetAuthTokens` node for integration with TwiWorks_):
